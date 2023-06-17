@@ -10,9 +10,9 @@ This is similar to rust.
 
 ## Macros changes
 * Macros have "return" types (string, body, statement, definition)
-* must have @ as a start name
+* must start with `@`, for example `@foo` and `@bar`. `ex@mple` is invalid.
 
-## Keywords may start with #
+## Keywords may start with `#`
 This means we can add new keywords without introducing conflicts
 
 ## Implicit struct names 
