@@ -41,7 +41,7 @@ sg_setup(&(sg_desc){
 * Functions inside a function
 * Not exposed outside the container function
 * Defined after the container function
-```
+```c
 fun foo()
 {
     bar();
@@ -53,21 +53,21 @@ fun foo()
 ```
 
 ## sections inside a function
-* can't nest a sections
-* don't indent sections
+* like a function but not named and immidiatly called
 
-```
+```c
 fun foo(x, y)
 {
-    use x, y
-    // only use x and y, outer variables aren't touched
-    x += 3;
-    y += x;
-    // can use multiple use returns, vars must match
-    use return a as x+y;
-    end
+    var a := x+y;
+    use x, y {
+        // only use x and y, outer variables aren't touched (or read)
+        x += 3;
+        y += x;
+        // can use multiple use returns, var names must match
+        use return x+y as b;
+    }
 
-    return x + a;
+    return b + a;
 }
 ```
 
@@ -83,13 +83,68 @@ Use the `_` character to
 
 ## Difference between functions and procedures
 * Functions may not modify arguments
-* Functions may not call procedures
+* Functions may work on state but only state local to the function
+* Functions may call procedures but only on local variables
 
+## Functions may return anonymous structs
+```c
+fun foo(): struct {int x;}
+{
+    return {x: 42};
+}```
+
+## Pipeline-placeholder operator
+https://twitter.com/seanbax/status/1654121073053511682
+```c
+const x = foo()
+    |> bar($)
+    ;
 ```
+versus
+```c
+const x = bar(foo());
+```
+
+## `?` and `??` operator
+Work like c#/kotlin nullable
+
+## `const` vs `var`
+Bit constness work like c++
+
+
+## `#embed` keyword
+Add data files to app.
+```c
+const data = #embed "some-file.txt"
+```
+
+## `@extend` keyword
+Works like struct embedding in Golang
+
+```c
+struct Foo
+{
+    int x;
+}
+
+struct Bar @extend Foo
+{
+   int y;
+}
+
+var bar := Foo{...};
+bar.x = bar.y;
+```
+
+
+```c
 proc foo() {}
 #proc buddy_foo() {}
 
 fun bar() {}
 #fun budddy_bar() {}
 ```
+
+## Helpful memory management
+TBD
 
