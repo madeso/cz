@@ -15,23 +15,33 @@ This is similar to rust.
 ## Keywords may start with `#`
 This means we can add new keywords without introducing conflicts
 
-## Implicit struct names 
-```c
-sg_setup(&{
-    .logger.func = slog_func,
-});
-```
-vs
-```c
-sg_setup(&(sg_desc){
-    .logger.func = slog_func,
-});
-```
-
 ## no include files
 * It should work kinda like typescript modules
 * Parse C headers to modules
 * Modules may accept arguments? (single style headers with define arguments?)
+
+## Implicit struct names 
+```c
+sg.setup(&{
+    .logger.func = slog_func,
+});
+```
+vs
+
+```c
+sg.setup(&(sg.desc){
+    .logger.func = slog_func,
+});
+```
+
+Optionally use namespaces/imports to differentiate/be explicit
+
+```c
+sg.setup(&sg.{
+    .logger.func = slog_func,
+});
+```
+*todo*: is `sg.` required or is `sg` enough?
 
 ## built in strings, dyn-arrays, dicts, iterators & tuples
 
@@ -145,6 +155,45 @@ fun bar() {}
 #fun budddy_bar() {}
 ```
 
+## Overloading and function/oop syntax?
+
+The following code examples are the same
+
+```c
+struct Foo
+{
+    proc bar()
+    {
+    }
+}
+
+// ...
+
+Foo foo = ...;
+bar(foo);
+```
+
+```cpp
+struct Foo
+{
+}
+
+proc bar(this: Foo)
+{
+}
+
+// ...
+
+Foo foo = ...;
+foo.bar();
+```
+
+ie "member" functions are only syntax sugar for functions taking the first struct as a argument, and `foo.bar()` is only syntax sugar for calling `bar` with the first argument outside of the argument list.
+Member access has higher priority, use `->` syntax to only access functions: `foo->name.space()` is sugar for `name.space(foo)` not `space(foo.name)`
+
+
 ## Helpful memory management
+Instroduce concept of owning pointers and explicit move statement.
+
 TBD
 
