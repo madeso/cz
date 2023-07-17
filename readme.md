@@ -193,7 +193,16 @@ Member access has higher priority, use `->` syntax to only access functions: `fo
 
 
 ## Helpful memory management
-Instroduce concept of owning pointers and explicit move statement. Get inspired by other languages like [vale](https://verdagon.dev/blog/single-ownership-without-borrow-checking-rc-gc)
+Introduce concept of owning pointers and explicit move statement. Get inspired by other languages like [vale](https://verdagon.dev/blog/single-ownership-without-borrow-checking-rc-gc)
 
 TBD
+
+## Regex asa native data type
+
+References:
+* [Regex engine internals as a library](https://blog.burntsushi.net/regex-internals/)
+* [Regex, Part 1: Parser](https://kean.blog/post/regex-parser)
+* [Regex, Part 2: Compiler](https://kean.blog/post/regex-compiler)
+* [Regex, Part 3: Matcher](https://kean.blog/post/regex-matcher)
+
 
