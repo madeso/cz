@@ -193,7 +193,7 @@ Member access has higher priority, use `->` syntax to only access functions: `fo
 
 
 ## Helpful memory management
-Instroduce concept of owning pointers and explicit move statement.
+Instroduce concept of owning pointers and explicit move statement. Get inspired by other languages like [vale](https://verdagon.dev/blog/single-ownership-without-borrow-checking-rc-gc)
 
 TBD
 
