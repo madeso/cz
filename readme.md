@@ -71,6 +71,25 @@ if((a==b) == false)
 else {print("same"); }
 ```
 
+Example foreach loop
+```c
+#define @foreach(type: Type, name: Ident, container: DynArray<Type>, body: Body)
+{
+    const size = container.size();
+    for(int i=0; i<size; i+=1)
+    {
+        #emit(body,
+            variables: {name: container[i]},
+            commands: {
+                break: { #emit(break); },
+                continue: { #emit(continue); }
+                // introduce other like swap_back_delete and push_back? (but could be allowed since adding is well defined)
+            }
+        );
+    }
+}
+```
+
 Design issues:
 
 - how would scoping work?
