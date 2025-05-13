@@ -22,6 +22,10 @@ This is similar to rust.
 
 They will assert/crash at runtime with an error but this might be desirable if you know during a refactor that some part of the code is never touched but you want to test the assumption that the refactor fixed a bug/improved perf.
 
+## Look into native support for transactions and transactions on "classes"
+https://en.wikipedia.org/wiki/Transaction_processing
+Perhaps it could work similar to how redux works (or at least take inspiration)?
+
 ## Macros changes
 
 - Macros have return types and arguments, and just like functions they have typpes.
