@@ -1,0 +1,8 @@
+// this is a comment
+/* also a comment */
+
+from console import print;
+
+func main() {
+    print("hello world\n");
+}
