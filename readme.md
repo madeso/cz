@@ -23,6 +23,7 @@ This is similar to rust.
 They will assert/crash at runtime with an error but this might be desirable if you know during a refactor that some part of the code is never touched but you want to test the assumption that the refactor fixed a bug/improved perf.
 
 ## Look into native support for transactions and transactions on "classes"
+
 https://en.wikipedia.org/wiki/Transaction_processing
 Perhaps it could work similar to how redux works (or at least take inspiration)?
 
@@ -76,6 +77,7 @@ else {print("same"); }
 ```
 
 Example foreach loop
+
 ```c
 #define @foreach(type: Type, name: Ident, container: DynArray<Type>, body: Body)
 {
@@ -541,6 +543,69 @@ Design decisions:
 
 - Should include/import be used to manage large files?
 - Should interface libaries be extempt from this mapping. If so, who decides what a inteface library is and how are conflicting intefaces solved?
+
+## ada styled subtypes
+
+> You can, and should, define your own types for the domain you are
+> modelling. But you can use the standard types to start with and then
+> replace them later with your own types, this could be called a form of
+> gradual typing.
+
+> The standard types would only really be a good starting point for binding
+> to other languages, like C.
+
+```ada
+type Degrees is range 0 .. 360;  --  This is a type. Its underlying
+                                --  representation is an Integer.
+
+type Hues is (Red, Green, Blue, Purple, Yellow);  --  So is this. Here, we
+                                                    --  are declaring an
+                                                    --  Enumeration.
+
+--  This is a modular type. They behave like Integers that automatically
+--  wrap around. In this specific case, the range would be 0 .. 359.
+--  If we added 1 to a variable containing the value 359, we would receive
+--  back 0. They are very useful for arrays.
+type Degrees_Wrap is mod 360;
+```
+
+```ada
+--  Yes, you can even define your own floating and fixed point types, this
+--  is a very rare and unique ability. "digits" refers to the minimum
+--  digit precision that the type should support. "delta" is for fixed
+--  point types and refers to the smallest change that the type will support.
+type Real_Angles is digits 3 range 0.0 .. 360.0;
+type Fixed_Angles is delta 0.01 digits 5 range 0.0 .. 360.0;
+```
+
+https://learnxinyminutes.com/ada/
+
+## bitset
+
+Mark variable and/or type as a bitset to only allow bit shifting on that variable.
+
+```cpp
+enum Bits {
+    A = 1 << 0,
+    B = 1 << 1,
+    C = 1 << 2
+}
+bitset u32 a = Bits.A;
+bitset u32 b = Bits.B;
+bitset u32 c = a | b;
+```
+
+```cpp
+bitset enum Bits {
+    A,
+    B,
+    C
+    // auto counted the bits
+}
+Bits a = Bits.A;
+Bits b = Bits.B;
+Bits c = a | b;
+```
 
 # Sample programs
 
