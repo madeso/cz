@@ -1,2 +1,6 @@
-<h1>{{ site.Title }}</h1>
+{{ $favicon := resources.Get "icons/favicon.svg" }}
+<div class="banner">
+    <img src="{{ $favicon.RelPermalink }}" class="logo"/>
+    <div class="title">{{ site.Title }}</div>
+</div>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

@@ -1,7 +1,7 @@
 {
    "baseURL": "https://example.org/",
    "languageCode": "en-us",
-   "title": "CZ language",
+   "title": "the cz language",
    "theme": "cz",
    "themesDir": "data/hugo/themes",
    "publishDir": "build/dist/web",
