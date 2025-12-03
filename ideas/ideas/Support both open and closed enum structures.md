@@ -1,6 +1,9 @@
 ---
 title: 'Open and closed enum structures'
 summary: 'Rust enums vs a oop interface'
+tags:
+    - oop
+    - from-rust
 ---
 
 ## Closed enum

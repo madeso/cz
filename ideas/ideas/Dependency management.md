@@ -1,6 +1,8 @@
 ---
 title: 'Resolving dependency collisions/diamond pattern'
 summary: 'by specifing dependencies'
+tags:
+    - build
 ---
 
 External dependencies are forced to specify entry points for all their dependencies.

@@ -1,6 +1,8 @@
 ---
-title: 'Regez as a native data type'
+title: 'Regex as a native data type'
 summary: 'Similar to js/ts'
+tags:
+    - from-typescript
 ---
 
 Why? Easily specify compile-time regexes without noise.

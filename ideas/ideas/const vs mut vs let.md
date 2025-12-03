@@ -1,6 +1,8 @@
 ---
 title: 'Variable declaration'
 summary: '`const` vs `mut` vs `let`'
+tags:
+    - declarations
 ---
 
 - `mut` mutable variable

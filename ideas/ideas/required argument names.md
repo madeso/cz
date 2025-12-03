@@ -1,6 +1,8 @@
 ---
 title: 'Required/named argument names'
 summary: 'Copied from switft'
+tags:
+    - from-swift
 ---
 
 This is copied from swift, not yet sure of the exact syntax. I've tried to describe swift below:

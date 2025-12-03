@@ -1,6 +1,8 @@
 ---
 title: 'Import statement'
 summary: 'No include files'
+tags:
+    - from-typescript
 ---
 
 - It should work kinda like typescript modules

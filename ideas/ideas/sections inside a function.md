@@ -25,5 +25,8 @@ fun foo(x, y)
 }
 ```
 
-Why? compared to a location function, the local variables comes first and the return values exposed from the function comes after the block. Both code and data follows the logical top to bottom flow.
-Design note: should we allow early returns?
+## Why?
+Compared to a location function, the local variables comes first and the return values exposed from the function comes after the block. Both code and data follows the logical top to bottom flow.
+
+## Design note
+should we allow early returns?

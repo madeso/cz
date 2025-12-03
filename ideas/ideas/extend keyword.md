@@ -1,6 +1,8 @@
 ---
 title: 'Struct embedding'
 summary: 'using the `#extend` keyword'
+tags:
+    - hash-keywords
 ---
 
 Works like struct embedding in Golang

@@ -1,6 +1,8 @@
 ---
 title: 'Transactions'
 summary: 'Simplify certain code structures'
+tags:
+    - from-wikipedia
 ---
 ## Look into native support for transactions and transactions on "classes"
 

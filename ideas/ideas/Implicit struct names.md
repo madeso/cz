@@ -1,6 +1,9 @@
 ---
 title: 'Implicit struct names'
 summary: 'Use `{}` constructus'
+tags:
+    - editor
+    - xstate
 ---
 ## Implicit struct names
 

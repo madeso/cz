@@ -1,6 +1,10 @@
 ---
 title: 'Table driven code generation'
 summary: 'Should other code generations also be supported'
+tags:
+    - code-generation
+    - editor
+    - xstate
 ---
 
 Based on [this article](https://www.rfleury.com/p/table-driven-code-generation) and [XState](https://xstate.js.org/) generate code.

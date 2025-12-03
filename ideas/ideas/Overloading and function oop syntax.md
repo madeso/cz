@@ -1,6 +1,8 @@
 ---
 title: 'Overloading and function/oop syntax?'
 summary: 'Should this be available'
+tags:
+    - oop
 ---
 
 The following code examples are the same

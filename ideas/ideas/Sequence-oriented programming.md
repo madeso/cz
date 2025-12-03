@@ -1,6 +1,8 @@
 ---
 title: 'Sequence-oriented programming'
 summary: 'Is pipeline placeholder sufficient or does it need more?'
+tags:
+    - from-wikipedia
 ---
 
 Functional like operators. Would pipeline be sufficient for this.

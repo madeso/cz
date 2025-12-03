@@ -1,6 +1,8 @@
 ---
 title: 'Subtypes'
 summary: 'Like ada'
+tags:
+    - from-ada
 ---
 
 > You can, and should, define your own types for the domain you are
