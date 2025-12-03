@@ -1,0 +1,5 @@
+{{ $ref := .Get 0 }}
+{{ $link := relref . $ref }}
+{{ $page := .Site.GetPage $link }}
+
+<a class="internal" href="{{ $link }}">[[{{ $page.Title }}]]</a>
