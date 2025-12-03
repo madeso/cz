@@ -1,7 +1,7 @@
-+++
-title='Variable declaration'
-summary='`const` vs `mut` vs `let`'
-+++
+---
+title: 'Variable declaration'
+summary: '`const` vs `mut` vs `let`'
+---
 
 - `mut` mutable variable
 - `let` runtime constant

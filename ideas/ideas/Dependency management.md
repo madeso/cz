@@ -1,7 +1,7 @@
-+++
-title='Resolving dependency collisions/diamond pattern'
-summary='by specifing dependencies'
-+++
+---
+title: 'Resolving dependency collisions/diamond pattern'
+summary: 'by specifing dependencies'
+---
 
 External dependencies are forced to specify entry points for all their dependencies.
 

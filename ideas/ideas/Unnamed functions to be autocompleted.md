@@ -1,7 +1,7 @@
-+++
-title='Unnamed functions to be autocompleted'
-summary='Specify arguments first and then find a matching function'
-+++
+---
+title: 'Unnamed functions to be autocompleted'
+summary: 'Specify arguments first and then find a matching function'
+---
 
 ## Unnamed functions to be autocompleted
 

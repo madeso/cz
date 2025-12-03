@@ -1,7 +1,7 @@
-+++
-title='Struct embedding'
-summary='using the `#extend` keyword'
-+++
+---
+title: 'Struct embedding'
+summary: 'using the `#extend` keyword'
+---
 
 Works like struct embedding in Golang
 

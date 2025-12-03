@@ -1,7 +1,7 @@
-+++
-title='Required/named argument names'
-summary='Copied from switft'
-+++
+---
+title: 'Required/named argument names'
+summary: 'Copied from switft'
+---
 
 This is copied from swift, not yet sure of the exact syntax. I've tried to describe swift below:
 

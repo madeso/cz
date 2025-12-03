@@ -1,7 +1,7 @@
-+++
-title='bitset'
-summary='Mark variable and/or type as a bitset to only allow bit shifting on that variable.'
-+++
+---
+title: bitset
+summary: Mark variable and/or type as a bitset to only allow bit shifting on that variable.
+---
 
 Mark variable and/or type as a bitset to only allow bit shifting on that variable.
 

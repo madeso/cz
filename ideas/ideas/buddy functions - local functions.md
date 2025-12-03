@@ -1,7 +1,7 @@
-+++
-title='Buddy functions'
-summary='A local function declared outside the main body'
-+++
+---
+title: Buddy functions
+summary: A local function declared outside the main body
+---
 
 Buddy (or body) functions / local functions are:
 

@@ -1,7 +1,7 @@
-+++
-title='built in types'
-summary='strings, dyn-arrays, optionals, dicts, iterators & tuples'
-+++
+---
+title: 'built in types'
+summary: 'strings, dyn-arrays, optionals, dicts, iterators & tuples'
+---
 
 Why? Compiler and IDE can provide better hints.
 A possible optimization is that 7/31/63 bit integegers that can be null can be stored within their parent type, without needing additional storage needed. Cleaner syntax when there is only a vector and dictonary.

@@ -1,7 +1,9 @@
-+++
-title= 'Attributes'
-summary='Similar to c#'
-+++
+---
+title: Attributes
+summary: "Similar to c#"
+tags:
+    - from-csharp
+---
 
 Copied [from c#](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/).
 

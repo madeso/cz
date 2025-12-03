@@ -1,7 +1,7 @@
-+++
-title='Ignoreable identifiers'
-summary='Prefix with `_`'
-+++
+---
+title: 'Ignoreable identifiers'
+summary: 'Prefix with `_`'
+---
 
 Use the `_` character to
 

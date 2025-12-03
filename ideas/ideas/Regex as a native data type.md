@@ -1,7 +1,7 @@
-+++
-title='Regez as a native data type'
-summary='Similar to js/ts'
-+++
+---
+title: 'Regez as a native data type'
+summary: 'Similar to js/ts'
+---
 
 Why? Easily specify compile-time regexes without noise.
 

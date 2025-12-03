@@ -1,7 +1,7 @@
-+++
-title='Subtypes'
-summary='Like ada'
-+++
+---
+title: 'Subtypes'
+summary: 'Like ada'
+---
 
 > You can, and should, define your own types for the domain you are
 > modelling. But you can use the standard types to start with and then

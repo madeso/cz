@@ -1,7 +1,7 @@
-+++
-title='Embed data'
-summary='using the `#embed` keyword'
-+++
+---
+title: 'Embed data'
+summary: 'using the `#embed` keyword'
+---
 
 Add data files to app.
 

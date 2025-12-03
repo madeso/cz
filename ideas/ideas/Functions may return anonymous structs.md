@@ -1,7 +1,7 @@
-+++
-title='Functions may return anonymous structs'
-summary='Naming is hard'
-+++
+---
+title: 'Functions may return anonymous structs'
+summary: 'Naming is hard'
+---
 
 ```c
 fun foo(): struct {int x;}

@@ -1,7 +1,7 @@
-+++
-title='Macros'
-summary='Like c/c++ but typesafe and work at AST level instead'
-+++
+---
+title: 'Macros'
+summary: 'Like c/c++ but typesafe and work at AST level instead'
+---
 - Macros have return types and arguments, and just like functions they have typpes.
 - Types could be regular `string` and `int32` (compile time). But also `Body`, `Statement` and `Definition`. The final specification essentially will depend on how the parser operates.
 - They operate on the AST either before or after types have been resolved.

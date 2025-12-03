@@ -1,7 +1,7 @@
-+++
-title='Implicit struct names'
-summary='Use `{}` constructus'
-+++
+---
+title: 'Implicit struct names'
+summary: 'Use `{}` constructus'
+---
 ## Implicit struct names
 
 ```c

@@ -1,7 +1,7 @@
-+++
-title='Open and closed enum structures'
-summary='Rust enums vs a oop interface'
-+++
+---
+title: 'Open and closed enum structures'
+summary: 'Rust enums vs a oop interface'
+---
 
 ## Closed enum
 Closed enum structures would be encompass both classical enums and rust enums/unions. "Pattern matching"/matching on type here would be great.

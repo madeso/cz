@@ -1,7 +1,7 @@
-+++
-title='Functions vs Procedures'
-summary='Gradually transform a codebase into a more functional'
-+++
+---
+title: 'Functions vs Procedures'
+summary: 'Gradually transform a codebase into a more functional'
+---
 ## Difference between functions and procedures
 
 This terminology isn't reflected in the current state of the document, and outside of this section it's safe to assume whenever just functions are mentioned, that also applies to procedures.

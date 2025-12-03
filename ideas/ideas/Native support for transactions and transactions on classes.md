@@ -1,7 +1,7 @@
-+++
-title='Transactions'
-summary='Simplify certain code structures'
-+++
+---
+title: 'Transactions'
+summary: 'Simplify certain code structures'
+---
 ## Look into native support for transactions and transactions on "classes"
 
 https://en.wikipedia.org/wiki/Transaction_processing

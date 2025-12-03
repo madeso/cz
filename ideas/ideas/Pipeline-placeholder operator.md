@@ -1,7 +1,7 @@
-+++
-title='Pipeline-placeholder operator'
-summary='Use `|> $` to chain function calls'
-+++
+---
+title: 'Pipeline-placeholder operator'
+summary: 'Use `|> $` to chain function calls'
+---
 
 https://twitter.com/seanbax/status/1654121073053511682
 
