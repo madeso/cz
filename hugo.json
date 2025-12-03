@@ -5,6 +5,7 @@
    "theme": "cz",
    "themesDir": "data/hugo/themes",
    "publishDir": "build/dist/web",
+   "relativeURLs": true,
    "module": {
       "mounts": [
          {
