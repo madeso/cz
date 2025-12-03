@@ -4,7 +4,7 @@
    "title": "CZ language",
    "theme": "cz",
    "themesDir": "data/hugo/themes",
-   "publishDir": "build/dist/wwww",
+   "publishDir": "build/dist/web",
    "module": {
       "mounts": [
          {
