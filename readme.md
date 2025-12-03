@@ -11,6 +11,7 @@ Roughly the plan is as follows (not necessarily in order):
 3. Implement a reference transpiler and reimplement that app and see areas where it sufferes and can be improved.
 4. Evaluate if we(I) should continue on cz or switch efforts to improve the reference langauges the pain points since working on a language with someone is better than working alone.
 5. Profit?
+
 # Sample programs
 
 - a small plattform game
