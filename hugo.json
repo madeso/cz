@@ -1,0 +1,24 @@
+{
+   "baseURL": "https://example.org/",
+   "languageCode": "en-us",
+   "title": "CZ language",
+   "theme": "cz",
+   "themesDir": "data/hugo/themes",
+   "publishDir": "build/dist/wwww",
+   "module": {
+      "mounts": [
+         {
+            "source": "ideas",
+            "target": "content"
+         },
+         {
+            "source": "data/hugo/archetypes",
+            "target": "archetypes"
+         },
+         {
+            "source": "data/hugo/archetypes",
+            "target": "archetypes"
+         }
+      ]
+   }
+}
