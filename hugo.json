@@ -25,5 +25,10 @@
             "target": "archetypes"
          }
       ]
+   },
+   "markup": {
+      "highlight": {
+         "noClasses": false
+      }
    }
 }
