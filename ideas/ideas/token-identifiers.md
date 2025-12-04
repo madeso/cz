@@ -5,6 +5,7 @@ tags:
     - editor
     - for-functions
     - no-identifier
+    - keywords
 ---
 
 There is a small diference between `set c to a plus b` and `c = a + b`, what constitues too wordy and what tokens should use operators and keywords but it's something that's worh thinking about.

@@ -3,6 +3,7 @@ title: 'Embed data'
 summary: 'using the `#embed` keyword'
 tags:
     - hash-keywords
+    - keywords
 ---
 
 Add data files to app.
