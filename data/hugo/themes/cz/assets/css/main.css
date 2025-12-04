@@ -57,19 +57,3 @@ header nav li {
   font-weight: 700;
   letter-spacing: 1px;
 }
-
-div.taxonomies li {
-  list-style-type: none;
-  display: inline;
-  padding-right: 10px;
-}
-
-div.taxonomies ul {
-  padding: 0;
-}
-div.taxonomies div.label {
-  font-weight: bold;
-}
-div.taxonomies, div.taxonomies div.label, .taxonomies ul {
-  display: inline;
-}
