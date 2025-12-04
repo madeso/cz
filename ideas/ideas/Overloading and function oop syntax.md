@@ -44,9 +44,10 @@ Member access has higher priority, use `->` syntax to only access functions: `fo
 
 Can we use something like [c# extension methods](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to differentiate member functions and non member functions.
 
-## See also
+### Design issue
+How do we handle name collisions? And c function compability?
+
+### See also
 * {{<link "Pipeline-placeholder operator.md">}}
 * {{<link "../references/non-member-functions.md">}}
 
-### Design issue
-How do we handle name collisions? And c function compability?
