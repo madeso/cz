@@ -1,0 +1,6 @@
+<li>
+<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+{{ with .Summary }}
+    {{ if gt (len (trim . ' ')) 0 }} - {{ . }}{{ end }}
+{{ end }}
+</li>

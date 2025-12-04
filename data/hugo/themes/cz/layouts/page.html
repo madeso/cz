@@ -2,4 +2,12 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ with site.RegularPages.Related . | first 5 }}
+  <h3>Related:</h3>
+  <ul>
+    {{ range . }}
+      {{ partial "li-page-link.html" . }}
+    {{ end }}
+  </ul>
+{{ end }}
 {{ end }}

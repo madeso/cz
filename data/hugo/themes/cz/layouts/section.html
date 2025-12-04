@@ -3,13 +3,8 @@
   {{ .Content }}
   <section>
     <ul>
-  {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        {{ with .Summary }}
-          {{ if gt (len (trim . ' ')) 0 }} - {{ . }}{{ end }}
-        {{ end }}
-      </li>
+      {{ range .Pages }}
+        {{ partial "li-page-link.html" . }}
       {{ end }}
     </ul>
   </section>
