@@ -4,7 +4,12 @@
   <section>
     <ul>
   {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> - {{ .Summary }}</li>
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{ with .Summary }}
+          {{ if gt (len (trim . ' ')) 0 }} - {{ . }}{{ end }}
+        {{ end }}
+      </li>
       {{ end }}
     </ul>
   </section>

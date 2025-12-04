@@ -1,6 +1,6 @@
 ---
 title: 'Functions on objects'
-summary: 'Is this OOP?'
+summary: ' '
 tags:
     - oop
 ---
