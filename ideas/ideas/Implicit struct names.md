@@ -4,6 +4,7 @@ summary: 'Use `{}` constructus'
 tags:
     - editor
     - xstate
+    - for-functions
 ---
 ## Implicit struct names
 

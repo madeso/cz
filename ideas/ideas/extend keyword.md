@@ -3,6 +3,7 @@ title: 'Struct embedding'
 summary: 'using the `#extend` keyword'
 tags:
     - hash-keywords
+    - for-types
 ---
 
 Works like struct embedding in Golang

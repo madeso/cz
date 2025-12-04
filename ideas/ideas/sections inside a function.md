@@ -1,6 +1,8 @@
 ---
 title: 'Sections inside a function'
 summary: 'Similar to local functions but with less typing'
+tags:
+    - for-functions
 ---
 
 Works like a function but not named and immidiatly "called"

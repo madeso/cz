@@ -3,6 +3,7 @@ title: "State hints"
 summary: "Instead of custom logic for certain types, have editor types instead"
 tags:
     - editor
+    - for-types
 ---
 
 ```c

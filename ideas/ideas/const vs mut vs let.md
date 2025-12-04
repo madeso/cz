@@ -3,6 +3,7 @@ title: 'Variable declaration'
 summary: '`const` vs `mut` vs `let`'
 tags:
     - declarations
+    - for-functions
 ---
 
 - `mut` mutable variable

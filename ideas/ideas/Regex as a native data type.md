@@ -3,6 +3,7 @@ title: 'Regex as a native data type'
 summary: 'Similar to js/ts'
 tags:
     - from-typescript
+    - for-types
 ---
 
 Why? Easily specify compile-time regexes without noise.

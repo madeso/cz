@@ -1,6 +1,8 @@
 ---
 title: 'Functions may return anonymous structs'
 summary: 'Naming is hard'
+tags:
+    - for-functions
 ---
 
 ```c

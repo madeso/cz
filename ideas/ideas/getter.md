@@ -1,6 +1,8 @@
 ---
 title: Getter markup
 summary: Enforces that getters are simple
+tags:
+    - for-functions
 ---
 This enforces that a "get" function that does complicated work can't be named get. 
 

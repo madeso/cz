@@ -1,6 +1,8 @@
 ---
 title: bitset
 summary: Mark variable and/or type as a bitset to only allow bit shifting on that variable.
+tags:
+    - for-type
 ---
 
 Mark variable and/or type as a bitset to only allow bit shifting on that variable.

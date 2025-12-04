@@ -3,6 +3,7 @@ title: 'Pipeline-placeholder operator'
 summary: 'Use `|> $` to chain function calls'
 tags:
     - from-twitter
+    - for-functions
 ---
 
 https://twitter.com/seanbax/status/1654121073053511682

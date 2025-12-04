@@ -1,6 +1,8 @@
 ---
 title: 'Ignoreable identifiers'
 summary: 'Prefix with `_`'
+tags:
+    - for-functions
 ---
 
 Use the `_` character to
