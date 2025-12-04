@@ -1,12 +1,12 @@
 ---
-title: 'Unnamed functions to be autocompleted'
-summary: 'Specify arguments first and then find a matching function'
+title: "Unnamed functions to be autocompleted"
+summary: "Specify arguments first and then find a matching function"
 tags:
-    - editor
-    - no-identifier
+  - editor
+  - no-identifier
 ---
 
-## Unnamed functions to be autocompleted
+### Unnamed functions to be autocompleted
 
 - call a unknown function `.(a, b);` and `.foo(a, b);`
 

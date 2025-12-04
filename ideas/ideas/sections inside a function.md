@@ -1,8 +1,8 @@
 ---
-title: 'Sections inside a function'
-summary: 'Similar to local functions but with less typing'
+title: "Sections inside a function"
+summary: "Similar to local functions but with less typing"
 tags:
-    - for-functions
+  - for-functions
 ---
 
 Works like a function but not named and immidiatly "called"
@@ -27,8 +27,10 @@ fun foo(x, y)
 }
 ```
 
-## Why?
+### Why?
+
 Compared to a location function, the local variables comes first and the return values exposed from the function comes after the block. Both code and data follows the logical top to bottom flow.
 
-## Design note
+### Design note
+
 should we allow early returns?

@@ -1,16 +1,20 @@
 ---
-title: 'Regex as a native data type'
-summary: 'Similar to js/ts'
+title: "Regex as a native data type"
+summary: "Similar to js/ts"
 tags:
-    - from-typescript
-    - for-types
+  - from-typescript
+  - for-types
 ---
 
-Why? Easily specify compile-time regexes without noise.
+### Why
 
-Counterpoint: Provide a better library/language integration?
+Easily specify compile-time regexes without noise.
 
-References:
+### Counterpoint
+
+Provide a better library/language integration?
+
+### References:
 
 - [Regex engine internals as a library](https://blog.burntsushi.net/regex-internals/)
 - [Regex, Part 1: Parser](https://kean.blog/post/regex-parser)

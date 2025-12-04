@@ -1,13 +1,14 @@
 ---
-title: 'Implicit struct names'
-summary: 'Use `{}` constructus'
+title: "Implicit struct names"
+summary: "Use `{}` constructus"
 tags:
-    - editor
-    - xstate
-    - for-functions
-    - no-identifier
+  - editor
+  - xstate
+  - for-functions
+  - no-identifier
 ---
-## Implicit struct names
+
+### Implicit struct names
 
 ```c
 sg.setup(&{
@@ -33,5 +34,6 @@ sg.setup(&sg.{
 
 _todo_: is `sg.` required or is `sg` enough? How does zig and odin handle this?
 
-## Design note
+### Design note
+
 it would be preferable if it was easy to parse so we can provide in-editor hints and special editors like XState

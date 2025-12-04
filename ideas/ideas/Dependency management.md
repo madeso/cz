@@ -1,8 +1,8 @@
 ---
-title: 'Resolving dependency collisions/diamond pattern'
-summary: 'by specifing dependencies'
+title: "Resolving dependency collisions/diamond pattern"
+summary: "by specifing dependencies"
 tags:
-    - build
+  - build
 ---
 
 External dependencies are forced to specify entry points for all their dependencies.
@@ -20,12 +20,12 @@ dependencies {
 
 Here `lib_b` has to be used even though we don't depend on it. We mark it as `directly=false` as we don't use it directly.
 
-## Why?
+### Why?
 
 - Conflicts are visible up-front.
 - Libraries with many dependencies are possible but more cumbersome to use. Preasure on libary devs to provide easier to use libraries.
 
-## Design decisions:
+### Design decisions:
 
 - Should include/import be used to manage large files?
 - Should interface libaries be extempt from this mapping. If so, who decides what a inteface library is and how are conflicting intefaces solved?
