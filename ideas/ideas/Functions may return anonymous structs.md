@@ -3,6 +3,7 @@ title: 'Functions may return anonymous structs'
 summary: ' '
 tags:
     - for-functions
+    - no-identifier
 ---
 
 ```c

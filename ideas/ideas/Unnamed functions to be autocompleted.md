@@ -3,6 +3,7 @@ title: 'Unnamed functions to be autocompleted'
 summary: 'Specify arguments first and then find a matching function'
 tags:
     - editor
+    - no-identifier
 ---
 
 ## Unnamed functions to be autocompleted

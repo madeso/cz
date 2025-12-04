@@ -5,6 +5,7 @@ tags:
     - editor
     - xstate
     - for-functions
+    - no-identifier
 ---
 ## Implicit struct names
 
@@ -32,4 +33,5 @@ sg.setup(&sg.{
 
 _todo_: is `sg.` required or is `sg` enough? How does zig and odin handle this?
 
-Design note: it would be preferable if it was easy to parse so we can provide in-editor hints and special editors like XState
+## Design note
+it would be preferable if it was easy to parse so we can provide in-editor hints and special editors like XState
