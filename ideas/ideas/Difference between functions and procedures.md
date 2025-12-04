@@ -2,7 +2,7 @@
 title: "Functions vs Procedures"
 summary: "Gradually transform a codebase into a more functional"
 tags:
-  - declaration
+  - declarations
   - for-functions
 ---
 
