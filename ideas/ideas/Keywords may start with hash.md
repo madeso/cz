@@ -1,5 +1,5 @@
 ---
-title: 'Keywords may start with `#`'
+title: 'Keywords may start with #'
 summary: 'Looks like the preprocessor'
 tags:
     - hash-keywords
