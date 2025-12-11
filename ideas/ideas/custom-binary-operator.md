@@ -3,6 +3,7 @@ title: Custom binary operator
 summary: No need to reuse custom operators for custom "regular" operators.
 tags:
     - for-functions
+    - operators
 ---
 
 ```ts
