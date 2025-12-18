@@ -76,4 +76,40 @@ struct AlbumDetail: View {
 	}
 }
 ```
-What does this even mean???
+
+It looks like it has kotlin styled bodies attached to functions, implicit returns and `song in` is a argument to the function callback defined inside the function body.
+
+https://developer.apple.com/xcode/swiftui/
+https://developer.apple.com/documentation/swiftui/
+
+Loosly translated to the following cpp structure:
+```cpp
+struct View
+{
+    virtual std::unique_ptr<View> getView() = 0;
+};
+
+using ViewPtr = std::unique_ptr<View>;
+struct Context {};
+ViewPtr text(const std::string& str);
+
+struct Album {
+};
+
+ViewPtr album_detail(const Album& album)
+{
+    return list(album.songs, [](const auto& song){
+        return HStack([]{
+            Image(album.cover);
+            VStack(Alignment::leading)([]{
+                text(song.title);
+                text(song.artist.name)
+                    ->foregroundStyle(Color::secondary);
+                if(song.isExplicit)
+                    text("Explicit")
+                        ->foregroundStyle(Color::red);
+            });
+        });
+    });
+}
+```
