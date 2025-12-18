@@ -1,9 +1,15 @@
 ---
 title: "Built in string formatting"
 summary: " "
+tags:
+    - react
 ---
-Add syntax for constructing formatted strings. It would be nice if it also handled custom markup for console coloring and template strings like.
+Add syntax for constructing formatted strings. It would be nice if it could be extended to also handle custom markup for
+1. console coloring
+2. template strings
+3. react html-like constructions
 
+## References
 ### swift
 ```swift
 let temperature = 39
@@ -44,10 +50,7 @@ const str = `This is a formatted string ${argument}`
 ```
 
 ### Python
-Python uses prefixes
-```python
-```
-which is nice with "template" t-strings to solve "bobby tables" vulnerability
+Python uses prefixes which is nice with "template" t-strings to solve "bobby tables" vulnerability
 
 ```python
 from my_database_library import execute_sql
