@@ -1,6 +1,6 @@
 ---
 title: "Custom frontend"
-summary: ""
+summary: " "
 tags:
     - questionable
 ---

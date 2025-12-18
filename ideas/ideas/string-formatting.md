@@ -1,6 +1,6 @@
 ---
 title: "Built in string formatting"
-summary: ""
+summary: " "
 ---
 Add syntax for constructing formatted strings. It would be nice if it also handled custom markup for console coloring and template strings like.
 
