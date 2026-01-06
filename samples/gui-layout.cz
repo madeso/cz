@@ -1,0 +1,123 @@
+/*
+   This implements the forms layout.
+   Widgets are drawn in a design window and are anchored to the window edges. 
+   It doesn't handle all layouts but is easy to understand and easy
+   to tweak in a wysiwyg layout editor.
+*/
+// ts/cz hacks
+type int = number;
+
+// port yoga(https://github.com/facebook/yoga), react, redux...?
+
+// todo(Gustav): cz: should be a struct
+interface Size {
+    cx:int;
+    cy:int;
+};
+
+interface Rect {
+    left: int;
+    top: int;
+    right: int;
+    bottom: int;
+};
+
+const size_of = (r: Rect): Size => {
+    return {
+        cx: r.right - r.left,
+        cy: r.top - r.bottom
+    };
+};
+
+// todo(Gustav): cz: bitfield with invalid values? how to parse to/from c?
+type HorizontalAchor = HorizontalSizeInfo["type"]
+type VerticalAchor = VerticalSizeInfo["type"];
+interface Anchor
+{
+    horizontal: HorizontalAchor;
+    vertical: VerticalAchor;
+};
+
+// todo(Gustav): cz: how to handle typesafe unions?
+// https://patshaughnessy.net/2018/3/15/how-rust-implements-tagged-unions
+type HorizontalSizeInfo =
+    {type: "left", left_offset: int, width: int} |
+    {type: "right", right_offset: int, width: int} |
+    {type: "both", left_offset: int, right_offset: int};
+type VerticalSizeInfo =
+    {type: "top", top_offset: int, height: int} |
+    {type: "bottom", bottom_offset: int, height: int} |
+    {type: "both", top_offset: int, bottom_offset: int};
+interface SizeInfo
+{
+    // left, top, right, bottom: specify desired offset from the respective edge
+    // width, height: if set, specify the fixed widget size
+    horizontal: HorizontalSizeInfo;
+    vertical: VerticalSizeInfo;
+};
+
+const size_info_from_design_information = (widget_rect: Rect, anchor: Anchor, design_size: Rect): SizeInfo => {
+    const size = size_of(widget_rect);
+
+    // todo(Gustav): cz: can theese local functions be written in a cleaner way? like blocks/use statements
+    const horizontal = ((): HorizontalSizeInfo => {
+        const left_offset = widget_rect.left - design_size.left;
+        const right_offset = design_size.right - widget_rect.right;
+        const width = size.cx;
+        switch(anchor.horizontal) {
+        case "left": return { type: anchor.horizontal, left_offset, width };
+        case "right": return { type: anchor.horizontal, right_offset, width };
+        case "both": return { type: anchor.horizontal, left_offset, right_offset };
+        }
+    })();
+    const vertical = ((): VerticalSizeInfo => {
+        const top_offset = widget_rect.top - design_size.top;
+        const bottom_offset = design_size.bottom - widget_rect.bottom;
+        const height = size.cy;
+        switch(anchor.vertical) {
+        case "top": return {type: anchor.vertical, top_offset, height};
+        case "bottom": return {type: anchor.vertical, bottom_offset, height};
+        case "both": return {type: anchor.vertical, top_offset, bottom_offset};
+        }
+    })();
+    
+    return {horizontal, vertical};
+}
+
+const position_widget = (info: SizeInfo, window_size: Rect): Rect =>
+{
+    const {left, right} = ((): {left: int, right: int} => {
+        const calc_left = (left_offset: int) => left_offset + window_size.left;
+        const calc_right = (right_offset: int) => window_size.right - right_offset;
+        const d = info.horizontal;
+        switch(d.type) {
+        case "left":
+            const left = calc_left(d.left_offset)
+            return {left, right: left + d.width};
+        case "right":
+            const right = calc_right(d.right_offset);
+            return {left: right - d.width, right};
+        case "both":
+            return {left: calc_left(d.left_offset), right: calc_right(d.right_offset)};
+        }
+    })();
+
+    const {top, bottom} = ((): {top:int, bottom: int} => {
+        const calc_top =  (top_offset: int) => top_offset + window_size.top;
+        const calc_bottom =  (bottom_offset: int) => window_size.bottom - bottom_offset;
+        const d = info.vertical;
+        switch(d.type) {
+        case "top":
+            const top = calc_top(d.top_offset);
+            return {top, bottom: top + d.height};
+        case "bottom":
+            const bottom = calc_bottom(d.bottom_offset);
+            return {top: bottom - d.height, bottom};
+        case "both":
+            return {top: calc_top(d.top_offset), bottom: calc_bottom(d.bottom_offset)};
+        }
+    })();
+
+    return {left, top, right, bottom};
+}
+
