@@ -3,6 +3,7 @@ title: "Custom frontend"
 summary: " "
 tags:
     - questionable
+    - dsl
 ---
 
 Note: I'm not sure if this is a good idea or not.
@@ -18,3 +19,4 @@ This would allow frontend features to develop mopre easily and probably also ext
 
 ### See also
 * {{<link "Regex as a native data type.md">}}
+* {{<link "conditionals-are-compiletime-functions.md">}}
