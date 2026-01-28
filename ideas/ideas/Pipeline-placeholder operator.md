@@ -27,4 +27,10 @@ const x = bar(foo());
 
 ### Design note
 
-Use another reference than `$` here. Something like `value` that C# uses for property setters or `ans` that some calculators use. Perhaps a single `#` keyword?
+* Use another reference than `$` here. Something like `value` that C# uses for property setters or `ans` that some calculators use. Perhaps a single `#` keyword?
+* If `$` is not provided and line is a single "value", then treat it as sugar for passing the value as a argument: `const x = foo() |> bar`
+
+### See also
+* {{<link "Nullish coalescing operators.md">}}
+* {{<link "Pattern matching on union structs.md">}}
+
